@@ -57,7 +57,7 @@ let is_member = path.verify_membership(
     &leaf_crh_params,
     &two_to_one_crh_params,
     &root,
-    &leaf_bytes
+    &leaf_bytes.as_slice(),
 )?;
 
 // Assert that the membership check passes
